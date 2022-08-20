@@ -32,8 +32,10 @@
       .outer{
         flex:1.1;
         background-color: rgb(255, 255, 255);
-        
-        
+      }
+      .outer p+p {
+        margin-bottom: 2.5rem;
+        font-style: italic;
       }
       .upper{
         display: flex;
@@ -48,10 +50,13 @@
 
       .inner{
         background-color: rgb(250, 248, 215);
-        flex:1
+        flex:1;
+        display: flex;
+        flex-direction: column;
       }
-            
-
+      .inner p {
+        margin: 15px 0;
+      }
 
         </style>
 </head>
@@ -74,7 +79,7 @@
         <input type="text" name="firstname" id="firstname">
         <label for="lastname">Last Name</label>
         <input type="text" name="lastname" id="lastname">
-        <label for="mail">Enail</label>
+        <label for="mail">Email</label>
         <input type="email" name="mail" id="email">
         <label for="tel">Telephone</label>
         <input type="tel" name="tel" id="tel">
