@@ -6,8 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="signUpstyle.css">
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outercontainer{
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+        .sidebar{
+            width: 300px;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 1px solid plum;
+            display: flex;
+            flex-direction: column;   
+            align-items: stretch;
+            flex: 1;
+            height: 100vh;
+            
+        justify-content:center;
+        }
+
+      .outer{
+        border: 1px solid #1ff;
+        flex:1.1;
+        background-color: #af3;
+        
+      }
+
+      .inner{
+        background-color: #66f;
+        border: 1px solid green;
+        flex:1
+      }
+            
+
+
+
+
+        .sidepanel{
+            border: 1px solid #1ff;
+            width: 200px;
+
+        }
+        </style>
 </head>
-<body>
-    <p> Hello, Sign Up here for your donation$$$ </p>
+<body><div class="outercontainer">
+    <div class="sidebar">SIDEBAR</div>
+    <div class="container">
+    
+            
+        <div class="outer"><p>upper box</p></div>
+        <div class="inner"><p>formbox</p></div>
+        <div class="outer"><p>lower box</p></div>
+    </div> 
+    
+</div>
 </body>
 </html>
