@@ -55,14 +55,37 @@
 
         </style>
 </head>
-<body><div class="outercontainer">
-    <div class="sidebar"><img src="backgroundimage.jpg"></div>
+<body>
+    <div class="outercontainer">
+    <div class="sidebar"><img src="backgroundimage.jpg">
+    </div>
     <div class="container">
-        <div class="outer upper"><p>Sign up NOW!</p>
-        <p>The chance like this comes in a lifetime unero</p>
-    <p>HANDS ON YOURE HEAD DO IT NOW</p></div>
-        <div class="inner"><p>formbox</p></div>
-        <div class="outer lower"><p>lower box</p></div>
+
+    <div class="outer upper">
+    <p>Sign up NOW!</p>
+    <p>The chance like this comes in a lifetime unero</p>
+    <p>HANDS ON YOURE HEAD DO IT NOW</p>
+    </div>
+        
+    <div class="inner">
+         <p>Put in your personal information, now!</p>
+      <form action="/." method="POST">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname">
+        <label for="mail">Enail</label>
+        <input type="email" name="mail" id="email">
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <label for="passwordcheck">Repeat Password</label>
+        <input type="password" name="passwordcheck" id="passwordcheck">
+      </form>
+    </div>
+    
+            <div class="outer lower"><p>lower box</p></div>
     </div> 
     
 </div>
