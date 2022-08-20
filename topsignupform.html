@@ -53,7 +53,15 @@
         flex:1;
         display: flex;
         flex-direction: column;
-      }
+    }
+   /*  .inner form {
+        display: flex;
+        flex-direction: column;
+            
+    }
+    .inner input {
+
+    } */
       .inner p {
         margin: 15px 0;
       }
@@ -75,19 +83,38 @@
     <div class="inner">
          <p>Put in your personal information, now!</p>
       <form action="/." method="POST">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname">
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname">
-        <label for="mail">Email</label>
-        <input type="email" name="mail" id="email">
-        <label for="tel">Telephone</label>
-        <input type="tel" name="tel" id="tel">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="passwordcheck">Repeat Password</label>
-        <input type="password" name="passwordcheck" id="passwordcheck">
-      </form>
+        <ul>
+
+        <li>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname">
+        </li>
+        <li>
+            
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname">
+            
+        </li>
+        <li>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="email">
+            
+        </li>
+        <li>
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel">
+            
+        </li>
+        <li>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            
+        </li>
+        <li>
+            <label for="passwordcheck">Repeat Password</label>
+            <input type="password" name="passwordcheck" id="passwordcheck">
+        </li>
+    </form>
     </div>
     
             <div class="outer lower"><p>lower box</p></div>
