@@ -54,6 +54,12 @@
         display: flex;
         flex-direction: column;
     }
+    li{
+      list-style: none;
+    }
+    .inputbox{
+      border: 2px solid #ae1;
+    }
    /*  .inner form {
         display: flex;
         flex-direction: column;
@@ -65,7 +71,11 @@
       .inner p {
         margin: 15px 0;
       }
-
+.inputs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
         </style>
 </head>
 <body>
@@ -84,49 +94,52 @@
          <p>Put in your personal information, now!</p>
       <form action="/." method="POST">
         <ul>
-
-        <div class="inputbox">
-          <li>
-              <label for="firstname">First Name</label>
-              <input type="text" name="firstname" id="firstname">
-          </li>
+<div class="inputs">
+  
+          <div class="inputbox">
+            <li>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            </li>
+          </div>
+          <div class="inputbox">
+            <li>
+  
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+  
+            </li>
+          </div>
+          <div class="inputbox">
+            <li>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="email">
+  
+            </li>
+          </div>
+          <div class="inputbox">
+            <li>
+                <label for="tel">Telephone</label>
+                <input type="tel" name="tel" id="tel">
+  
+            </li>
+          </div>
+          <div class="inputbox">
+            <li>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+  
+            </li>
+  
+          </div>
+          <div class="inputbox">
+            <li>
+                <label for="passwordcheck">Repeat Password</label>
+                <input type="password" name="passwordcheck" id="passwordcheck">
+            </li>
+</div>
         </div>
-        <div class="inputbox">
-          <li>
-          
-              <label for="lastname">Last Name</label>
-              <input type="text" name="lastname" id="lastname">
-          
-          </li>
-        </div>
-        <div class="inputbox">
-          <li>
-              <label for="mail">Email</label>
-              <input type="email" name="mail" id="email">
-          
-          </li>
-        </div>
-        <div class="inputbox">
-          <li>
-              <label for="tel">Telephone</label>
-              <input type="tel" name="tel" id="tel">
-          
-          </li>
-        </div>
-        <div class="inputbox">
-          <li>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password">
-          
-          </li>
-          
-        </div>
-        <div class="inputbox">
-          <li>
-              <label for="passwordcheck">Repeat Password</label>
-              <input type="password" name="passwordcheck" id="passwordcheck">
-          </li>
-        </div></form>
+      </form>
     </div>
     
             <div class="outer lower"><p>lower box</p></div>
