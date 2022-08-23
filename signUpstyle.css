@@ -1,3 +1,9 @@
 body {/* 
 background-color: plum; */
 }
+
+/* button, input, select, textarea {
+  font-family: inherit;                       /* The inherit property value causes the property value to match the computed value of the property of its parent element; inheriting the value of the parent. */
+  font-size: 100%;
+}
+ */
