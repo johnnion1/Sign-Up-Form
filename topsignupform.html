@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="signUpstyle.css">
+    
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,400&display=swap');
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        body{
+          font-family: "Montserrat", Geneva, Perpetua;
         }
         .outercontainer{
             display: flex;
@@ -27,7 +32,7 @@
             flex: 1;
             height: 100vh;
             justify-content:center;
-        }
+        }      
 
     .outer{
         flex:1.1;
@@ -53,28 +58,34 @@
         flex:1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;;
+
+        flex-wrap: wrap;
     }
     li{
       list-style: none;
     }
     .inputbox{
       border: 2px solid #ae1;
+      width:fit-content
     }
    
     .inner p {
         margin: 15px 0;
       }
-.inputs{
+ul>.inputs{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-align-items: flex-end;
-border: 1px solid #faa; 
-margin: auto 0;
-flex:1;
+align-items: ;
+flex-direction: column;
+
+border: 1px solid;
+flex: 1;
+
+
 
 }
+
+
 
         </style>
 </head>
@@ -93,10 +104,11 @@ flex:1;
     <div>
          <h2>Put in your personal information, man!</h2>
          </div>
-         <div class="inputs">
          <form action="/." method="POST">
+        
         <ul>
-          <div class="inputbox">
+        
+         <div class="inputs">  <div class="inputbox">
             <li>
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" id="firstname">
