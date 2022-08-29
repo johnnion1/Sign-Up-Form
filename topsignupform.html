@@ -23,7 +23,8 @@
         }
         .sidebar{
             width: 300px;
-            background-color: antiquewhite;
+            background: greenyellow url("../../Lepidophora_lepidocera.jpg");
+            position: relative;
         }
         .container{
             display: flex;
@@ -35,7 +36,7 @@
         }      
 
     .outer{
-        flex:1.1;
+        flex:1;
         background-color: rgb(255, 255, 255);
       }
     .outer p+p {
@@ -63,7 +64,13 @@
         border: 1px solid purple;
         padding-bottom: 25px;
     }
-
+.banner {
+  height: 100px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 21vh;
+}
 /*    GRID       */
 * {
         box-sizing: border-box;
@@ -130,17 +137,44 @@ input:focus {
         box-shadow: 3px 2px 1px rgba(99, 99, 99, 0.3);
         outline: 1px solid rgba(76, 127, 255, 0.7)
 }
-
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner > p {
+  color: lightseagreen;
+  font-size: 200%;
+  position:absolute;
+}
+#logo{
+transform: scale(20%)
+}
         </style>
 </head>
 <body>
     <div class="outercontainer">
     <div class="sidebar"><!-- <img src="backgroundimage.jpg"> -->
+    <div class="banner">
+    <div id="logo"><img src="logo2.png">
+
     </div>
+    <p>HODIN</p>
+    </div>
+    </div>
+
     <div class="container">
 
     <div class="outer upper">
     <p>You can sign up for our services right now.</p>
+      
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p><p>
+      
+      Ratione aliquam non rerum quam, incidunt labore animi
+    </p>
+    <p>imilique aut, natus consectetur perferendis soluta, nemo 
+    officiis dolor porro! Itaque libero unde tempore!</p>
     <p>"The chance like this comes in a lifetime unero, so don't waste time!"</p>
     </div>
         
