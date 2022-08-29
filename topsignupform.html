@@ -80,7 +80,7 @@
         width: 700px;
         height: 220px;
         background: lightcyan;
-
+        position: relative;
 }
 #grid-container {
 background: plum;
@@ -149,6 +149,22 @@ input:focus {
 }
 #logo{
 transform: scale(20%)
+}
+#submitbtn {
+  position: absolute;
+  bottom: -90px;
+ /* ? */ left: 5px;
+ /*   appearance: none; */
+  background-color: olive;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  height: 40px;
+  width: 20%;
+ 
+}
+#submitbtn:active {
+ /*  outline: inset 1px solid purple; */
 }
         </style>
 </head>
@@ -220,13 +236,17 @@ transform: scale(20%)
 
 <!-- <div class="box">SIX</div> -->
 </div>
+
+<button type="submit" id="submitbtn">Create Account</button>
 </div>
+
 </fieldset>
 </form>
 </div>
 </section>
     
-            <div class="outer lower"><p>lower box</p></div>
+            <div class="outer lower">
+            <p>lower box</p></div>
     </div> 
     
 </div>
